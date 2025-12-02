@@ -1,0 +1,14 @@
+# Rust
+/target/
+
+# Build artifacts
+/dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDEs
+.vscode/
+.idea/

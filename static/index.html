@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netool Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Netool Client</h1>
+            <p class="status">Connected to Control Server</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Ping Test</h2>
+                <button id="pingBtn">Run Ping</button>
+                <div id="pingResult" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>Speed Test</h2>
+                <div class="input-group">
+                    <label for="speedDuration">Duration (s):</label>
+                    <input type="number" id="speedDuration" value="10" min="1" max="60">
+                </div>
+                <button id="speedBtn">Run Speed Test</button>
+                <div id="speedResult" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>Port Test</h2>
+                <div class="input-group">
+                    <label for="portRange">Port Range:</label>
+                    <input type="text" id="portRange" value="8000-8005" placeholder="e.g. 8000-8005, 9000">
+                </div>
+                <button id="portBtn">Run Port Test</button>
+                <div id="portResult" class="result"></div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
